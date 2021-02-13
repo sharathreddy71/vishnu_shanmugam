@@ -25,56 +25,60 @@ const Navbar=() =>{
         setDropdown(false);
       }
     };
+    const extendElement = () => {
+      dropdown ? setDropdown(false) : setDropdown(true);
+    }
+    
     return (
         <nav className='navbar'>
         <Link to='/vishnu_shanmugam' className='navbar-logo' onClick={closeMobileMenu}>
-        Vishnu Shanmugam
+        VISHNU SHANMUGAM
           </Link>
 
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
 
-        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-        <li className='nav-item'>
-            <Link to='/vishnu_shanmugam' className='nav-links' onClick={closeMobileMenu}>
+            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+              <li className='nav-item'>
+                <Link to='/vishnu_shanmugam' className='nav-links' onClick={closeMobileMenu}>
+                  
+                </Link>
+              </li>
+              <li className='nav-item'>
+                <Link to='/About' className='nav-links' onClick={closeMobileMenu}>
+                  About
+                </Link>
+              </li>
               
-            </Link>
-          </li>
-          <li className='nav-item'>
-            <Link to='/About' className='nav-links' onClick={closeMobileMenu}>
-              About
-            </Link>
-          </li>
-          
-          <li
+              <li
                 className='nav-item'
                 onMouseEnter={onMouseEnter}
-                onMouseLeave={onMouseLeave} >
-               
-               <button
-                    className='nav-button '
-                    onClick={closeMobileMenu}>
-                    Gallery <i className='fas fa-caret-down' />
-                </button>
+                onMouseLeave={onMouseLeave} 
+                onClick={extendElement}>
+              
+                <Link
+                  className='nav-links '>
+                  Gallery 
+                </Link>
 
-                {dropdown && <Dropdown />}
-                
-                
-          </li>
-          
-          
-          <li className='nav-item'>
-            <Link
-              to='/contact'
-              className='nav-links'
-              onClick={closeMobileMenu}>
-              Contact
-            </Link>
-          </li>
-          
-        </ul>
-        
+                {dropdown && <Dropdown onCloseMobileMenu={closeMobileMenu} />}
+                    
+                    
+              </li>
+              
+              
+              <li className='nav-item'>
+                <Link
+                  to='/contact'
+                  className='nav-links'
+                  onClick={closeMobileMenu}>
+                  Contact
+                </Link>
+              </li>
+              
+            </ul>
+            
       </nav>
     )
 }

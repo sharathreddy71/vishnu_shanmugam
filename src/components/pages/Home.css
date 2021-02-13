@@ -1,6 +1,7 @@
 .corousel {
   display: flex;
   justify-content:center ;
+  
 }
 
 .corousel .slide {
@@ -9,20 +10,25 @@
 .corousel .slide img {
   max-height: 100%;
   width: auto;
+  
 }
 .image {
   margin: 0 auto;
   height: 10%;
   width: 80%;
+  
+  
 }
 @media only screen and (max-width:1200px){
     .corousel{
         height: 90vh;
+        
 
     }
     .corousel.slide img{
         margin: 10vh auto;
         width: 100vw;
+
     }
 }
 @media only screen and (max-width:800px){

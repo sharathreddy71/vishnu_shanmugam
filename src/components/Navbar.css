@@ -8,7 +8,7 @@
 }
 
 .navbar-logo {
-  color: rgba(165, 174, 182, 0.685);
+  color: rgb(119, 136, 153);
   justify-self: start;
   margin-right: 50px;
   cursor: pointer;
@@ -28,18 +28,19 @@
   justify-content: end;
   margin-right: 2rem;
 }
-.nav-button {
-  color: rgba(165, 174, 182, 0.685);
+/* .nav-button {
+  color: rgb(119,136,153);
   cursor: pointer;
   padding: none;
   background-color: black;
-  border: none;
+  border-radius: none;
   padding: 15px 32px;
   display: inline-block;
   outline: none;
   font-size: medium;
   font-family: Georgia, serif;
-}
+  text-decoration: none;
+} */
 
 .nav-item {
   display: flex;
@@ -49,12 +50,11 @@
 }
 
 .nav-links {
-  color: rgba(165, 174, 182, 0.685);
+  color: rgb(119, 136, 153);
   text-decoration: none;
   padding: 0.5rem 1rem;
   font-size: medium;
   font-family: Georgia, serif;
-  
 }
 
 .nav-links:hover {
@@ -65,7 +65,7 @@
 }
 
 .fa-bars {
-  color: rgba(165, 174, 182, 0.685);
+  color: rgb(119, 136, 153);
   font-size: large;
   display: flex;
   margin-top: 6px;
@@ -83,21 +83,22 @@
   .NavbarItems {
     position: relative;
   }
-  .nav-button {
+  /* .nav-button {
     text-align: center;
     padding: 2rem;
     width: 100%;
     display: table;
     
-  }
+
+  } */
 
   .nav-menu {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
+    height: 150%;
     position: absolute;
-    top: 80px;
+    top: 50px;
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -123,14 +124,22 @@
   .nav-links:hover {
     background-color: black;
     border-radius: none;
+    color: rgb(119, 136, 153);
   }
 
   .navbar-logo {
-    color: rgba(165, 174, 182, 0.685);
+    color: rgb(119, 136, 153);
     position: absolute;
-    top: 0;
+    top: 2%;
     left: 0;
     transform: translate(25%, 50%);
+    justify-self: start;
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Arial Nova;
+    display: flex;
+    font-size: medium;
   }
 
   .menu-icon {
@@ -144,7 +153,7 @@
   }
 
   .fa-times {
-    color: rgba(165, 174, 182, 0.685);
+    color: rgb(119, 136, 153);
     font-size: large;
     display: flex;
     margin-top: 6px;
@@ -157,18 +166,15 @@
     margin: 2rem auto;
     border-radius: 4px;
     width: 80%;
-    /* background: black; */
     text-decoration: none;
-    color: black;
+    color: rgb(119, 136, 153);
     font-size: 1.5rem;
     outline: none;
-    
   }
 
   .nav-links-mobile:hover {
     background: #fff;
     color: black;
     transition: 250ms;
-    
   }
 }
