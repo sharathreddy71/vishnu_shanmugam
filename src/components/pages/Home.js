@@ -11,7 +11,7 @@ function Home() {
     return (
       <div class="carousel-wrapper">
             <Carousel  infiniteLoop autoPlay 
-            interval={3000}
+            interval={2000}
             showArrows={false}
             showIndicators={false}
             showThumbs={false}
