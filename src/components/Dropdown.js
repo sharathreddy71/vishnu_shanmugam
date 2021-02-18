@@ -22,7 +22,7 @@ function Dropdown(props) {
               <Link
                 className={item.cName}
                 to={item.path}
-                onClick={closeMobileMenu}>
+                onClick={() => setClick(false)}>
                 {item.title}
               </Link>
             </li>

@@ -40,11 +40,11 @@ const Navbar=() =>{
         </div>
 
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-              <li className='nav-item'>
-                <Link to='/vishnu_shanmugam' className='nav-links' onClick={closeMobileMenu}>
+              {/* <li className='nav-item'>
+                <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                   
                 </Link>
-              </li>
+              </li> */}
               <li className='nav-item'>
                 <Link to='/About' className='nav-links' onClick={closeMobileMenu}>
                   About

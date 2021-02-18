@@ -34,10 +34,10 @@
 }
 
 @media screen and (max-width: 960px) {
-  .dropdown-menu li {
+   /* .dropdown-menu li {
     background: black;
     cursor: pointer;
-  }
+  } */
   .dropdown-menu {
     width: 100%;
     position: absolute;
@@ -45,14 +45,14 @@
     list-style: none;
     text-align: center;
     color: white;
-  }
+  } 
 
   /* .dropdown-menu li:hover {
     background: black;
   }
    */
 
-  .dropdown-link {
+  /* .dropdown-link {
     display: contents;
     justify-content: center;
     height: 80%;
@@ -60,7 +60,6 @@
     text-decoration: none;
     color: rgb(119, 136, 153);
     padding: 16px;
-    /* z-index: 1; */
-  }
+    z-index: 1;
+  } */
 }
-
