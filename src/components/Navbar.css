@@ -69,6 +69,7 @@
   font-size: large;
   display: flex;
   margin-top: 6px;
+  background-color: black;
 }
 
 .nav-links-mobile {
@@ -157,6 +158,7 @@
     font-size: large;
     display: flex;
     margin-top: 6px;
+    background-color: black;
   }
 
   .nav-links-mobile {
@@ -172,11 +174,11 @@
     outline: none;
   }
 
-  .nav-links-mobile:hover {
+  /* .nav-links-mobile:hover {
     background: #fff;
     color: black;
     transition: 250ms;
-  }
+  } */
 }
 
 

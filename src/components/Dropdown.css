@@ -34,18 +34,18 @@
 }
 
 @media screen and (max-width: 960px) {
-  /* .dropdown-menu li {
+   /* .dropdown-menu li {
     background: black;
     cursor: pointer;
   } */
-  .dropdown-menu {
+  .dropdown-menu{
     width: 100%;
-    position: absolute;
-    top: 250px;
-    left: 250px;
+    position:absolute;
+    top:225px;
+    left: 35%;
     list-style: none;
     text-align: center;
-  }
+}
   /* .dropdown-menu li:hover {
     background: black;
   }
