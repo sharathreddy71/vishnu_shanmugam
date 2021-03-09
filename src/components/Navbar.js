@@ -51,6 +51,17 @@ const Navbar=() =>{
                 </Link>
               </li>
               
+              
+              
+              
+              <li className='nav-item'>
+                <Link
+                  to='/contact'
+                  className='nav-links'
+                  onClick={closeMobileMenu}>
+                  Contact
+                </Link>
+              </li>
               <li
                 className='nav-item'
                 onMouseEnter={onMouseEnter}
@@ -65,16 +76,6 @@ const Navbar=() =>{
                 {dropdown && <Dropdown onCloseMobileMenu={closeMobileMenu} />}
                     
                     
-              </li>
-              
-              
-              <li className='nav-item'>
-                <Link
-                  to='/contact'
-                  className='nav-links'
-                  onClick={closeMobileMenu}>
-                  Contact
-                </Link>
               </li>
               
             </ul>

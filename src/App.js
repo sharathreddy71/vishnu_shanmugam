@@ -16,30 +16,7 @@ function App() {
     <Router>
       <Navbar/>
         <Switch>
-          {/* <Route path = '/'>
-            <Navbar/>
-            <Home/>
-          </Route>
-          <Route path = '/About'>
-            <Navbar/>
-            <About/>
-          </Route>
-          <Route path = '/Contact'>
-            <Navbar/>
-            <Contact/>
-          </Route>
-          <Route path = '/Emanation'>
-            <Navbar/>
-            <Emanation/>
-          </Route>
-          <Route path = '/Transcendence'>
-            <Navbar/>
-            <Transcendence/>
-          </Route>
-          <Route path = '/Textures'>
-            <Navbar/>
-            <Textures/>
-          </Route> */}
+          
 
 
 
