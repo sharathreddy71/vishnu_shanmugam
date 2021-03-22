@@ -20,7 +20,7 @@ function App() {
 
 
 
-          <Route path='/vishnu_shanmugam' exact component={Home} />
+          <Route path='/' exact component={Home} />
           <Route path='/About' component={About} />
           <Route path='/Contact' component={Contact} />
           <Route path='/Emanation' component={Emanation} />
@@ -33,3 +33,5 @@ function App() {
 }
 
 export default App;
+
+
